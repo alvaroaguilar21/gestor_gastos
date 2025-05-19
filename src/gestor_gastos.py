@@ -1,7 +1,9 @@
 import csv
+import os
 from datetime import datetime
 
-ARCHIVO = "gastos.csv"
+ARCHIVO = "data/gastos.csv"
+os.makedirs("data", exist_ok=True)
 
 def cargar_datos():
     gastos = []
